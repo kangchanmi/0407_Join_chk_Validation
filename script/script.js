@@ -6,12 +6,9 @@ $(function () {
         var chk = $(this).prop("checked");
 
         if (chk == true) {
-            $(".check").prop("checked", "true");
+            $(".check").prop("checked", true);
         } else if (chk == false) {
-            document.getElementById("chk1").checked = false;
-            document.getElementById("chk2").checked = false;
-            document.getElementById("chk3").checked = false;
-            document.getElementById("chk4").checked = false;
+            $(".check").prop("checked", false);
         }
         /* 전체동의 버튼 선택 / 해제 */
 
@@ -26,7 +23,7 @@ $(function () {
             if (chk1 && chk2 && chk3 && chk4 == true) {
                 $("#allAgreeChk").prop("checked", "true");
             } else {
-                document.getElementById("allAgreeChk").checked = false;
+                $("#allAgreeChk").prop("checked", false);
             }
 
 
